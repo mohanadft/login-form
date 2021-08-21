@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #536dfe;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  border-radius: 50px;
+  width: 65%;
+  height: 700px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+section .img-form {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+section .img-form img {
+  width: 500px;
+}
+
+section .form-inputs {
+  text-align: center;
+  padding: 30px;
+}
+
+section .form-inputs form {
+  width: 360px;
+}
+
+section .form-inputs img {
+  width: 100px;
+}
+
+section .form-inputs h2 {
+  font-size: 2.9rem;
+  color: #333;
+  margin: 15px 0;
+}
+
+section .form-inputs input[type="submit"] {
+  width: 100%;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  border-radius: 50px;
+  color: #fff;
+  padding: 7px 0;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section .form-inputs input[type="submit"]:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+section .form-inputs input[type="submit"]:focus {
+  outline: 0;
+}
+.input {
+  position: relative;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  color: #333;
+  overflow: hidden;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+a:focus {
+  outline: 0;
+}
+
+.input-div {
+  display: flex;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.input-div > div {
+  position: relative;
+  height: 45px;
+}
+
+.input-div > div h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transform: 0.3s;
+  z-index: 15;
+  transition: 0.5s all ease-in-out;
+}
+
+.i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-div.one {
+  margin-top: 0;
+}
+
+.input-div.one {
+  margin-bottom: 4px;
+}
+
+i {
+  color: rgb(217, 217, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  transition: 0.5s all ease-in-out;
+}
+
+.resize {
+  left: 0 !important;
+  top: -10% !important;
+  font-size: 15px !important;
+  transition: 0.5s all ease-in-out;
+  color: var(--main-color) !important;
+}
+
+.color {
+  color: var(--main-color) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+  .img-form img {
+    width: 400px;
+  }
+}
+
+.left1,
+.left2 {
+  position: absolute;
+  width: 0;
+  background-color: var(--main-color);
+  height: 2px;
+  top: 50px;
+  left: -54px;
+  transition: 0.5s all ease-in-out;
+}
+
+.show-line {
+  width: calc(100% + 53px) !important;
+  transition: 0.5s all ease-in-out;
+}
